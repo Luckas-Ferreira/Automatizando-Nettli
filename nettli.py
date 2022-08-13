@@ -1,49 +1,5 @@
 import pyautogui, time
 
-def abrirCalculadora():
-    pageDown()
-    time.sleep(0.2)
-    pyautogui.press(['win'])
-    time.sleep(2)
-    pyautogui.write('calculadora')
-    time.sleep(1.1)
-    pyautogui.press(['enter'])
-    time.sleep(1.5)
-    pyautogui.keyDown('win')
-    pyautogui.press(['right'])
-    time.sleep(0.2)
-    pyautogui.keyUp('win')
-    time.sleep(0.2)
-    pyautogui.moveTo(['1303', '49'])
-    time.sleep(0.2)
-    pyautogui.click()
-    time.sleep(0.2)
-    pageUp()
-
-def ctrlC():
-    pyautogui.keyDown('ctrlleft')
-    pyautogui.press(['c'])
-    time.sleep(0.5)
-    pyautogui.keyUp('ctrlleft')
-
-def ctrlV():
-    pyautogui.keyDown('ctrlleft')
-    pyautogui.press(['v'])
-    time.sleep(0.5)
-    pyautogui.keyUp('ctrlleft')
-
-def pageDown():
-    pyautogui.keyDown('win')
-    pyautogui.press(['pagedown'])
-    time.sleep(0.5)
-    pyautogui.keyUp('win')
-
-def pageUp():
-    pyautogui.keyDown('win')
-    pyautogui.press(['pageup'])
-    time.sleep(0.5)
-    pyautogui.keyUp('win')
-
 pyautogui.alert('Agora o computador está sendo controlado')
 
 pyautogui.PAUSE = 0.3
