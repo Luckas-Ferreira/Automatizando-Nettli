@@ -1,12 +1,14 @@
 import pyautogui, time
 
+from .nettli import abrirCalculadora, ctrlC, ctrlV, pageDown, pageUp
+
 class acoes:
     def __init__(self):
-        self.abrirCalculadora()
-        self.ctrlC()
-        self.ctrlV()
-        self.pageDown()
-        self.pageUp()
+        self.abrirCalculadora = abrirCalculadora
+        self.pageDown = pageDown
+        self.pageUp = pageUp
+        self.ctrlC = ctrlC
+        self.ctrlV = ctrlV
 
     def pageDown():
         pyautogui.keyDown('win')
@@ -45,3 +47,5 @@ class acoes:
         pyautogui.keyUp('ctrlleft')
 
     
+lorem = acoes()
+lorem.abrirCalculadora()
