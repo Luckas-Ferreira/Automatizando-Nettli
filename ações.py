@@ -1,6 +1,5 @@
 import pyautogui, time
 
-from .nettli import abrirCalculadora, ctrlC, ctrlV, pageDown, pageUp
 
 class acoes:
     def __init__(self):
