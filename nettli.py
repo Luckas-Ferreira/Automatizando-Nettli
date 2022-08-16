@@ -58,7 +58,7 @@ while True:
     time.sleep(20)
     pyautogui.moveTo(['1359', '163'])
     pyautogui.click()
-    time.sleep(30)
+    time.sleep(20)
     pyautogui.moveTo(['907', '169'])
     pyautogui.doubleClick()
     ctrlC()
