@@ -42,13 +42,14 @@ pyautogui.alert('Agora o computador está sendo controlado')
 
 pyautogui.PAUSE = 0.3
 pyautogui.hotkey('alt', 'tab')
-procurar = 'sim'
 
-while procurar == 'sim':
+while True:
     img = pyautogui.locateCenterOnScreen('captura.png')
+    time.sleep(0.5)
     while img != None:
         time.sleep(1)
         pyautogui.moveTo(['907', '169'])
+        time.sleep(0.25)
         pyautogui.doubleClick()
         ctrlC()
         pageDown()
@@ -59,6 +60,7 @@ while procurar == 'sim':
         pageUp()
         pyautogui.moveTo(['985', '169'])
         pyautogui.doubleClick()
+        time.sleep(0.25)
         ctrlC()
         pageDown()
         ctrlV()
