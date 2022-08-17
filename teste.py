@@ -1,5 +1,9 @@
 from email.mime import image
 import pyautogui, time
+from pynput import keyboard
+
+''' if keyboard.read_key() == "esc":
+        break'''
 
 def pageDown():
     pyautogui.keyDown('win')
@@ -28,24 +32,24 @@ def abrirCalculadora():
     pageUp()
 
 def ctrlC():
-    pyautogui.keyDown('ctrlleft')
-    pyautogui.press(['c'])
-    pyautogui.keyUp('ctrlleft')
+    pyautogui.hotkey('ctrlleft', 'c')
 
 def ctrlV():
-    pyautogui.keyDown('ctrlleft')
-    pyautogui.press(['v'])
-    pyautogui.keyUp('ctrlleft')
+    pyautogui.hotkey('ctrlleft', 'v')
+
 
 
 pyautogui.alert('Agora o computador está sendo controlado')
 
 pyautogui.PAUSE = 0.3
+time.sleep(0.5)
 pyautogui.hotkey('alt', 'tab')
 
 while True:
-    img = pyautogui.locateCenterOnScreen('captura.png')
+    img = pyautogui.locateCenterOnScreen('captura.png', confidence=0.9)
     time.sleep(0.5)
+    print(img)
+    pyautogui.click(['1362', '272'])
     while img != None:
         time.sleep(1)
         pyautogui.moveTo(['907', '169'])
