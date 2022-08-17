@@ -40,9 +40,9 @@ pyautogui.alert('Agora o computador está sendo controlado')
 
 pyautogui.PAUSE = 0.3
 abrirCalculadora()
-pyautogui.keyDown('alt')
-pyautogui.press(['tab'])
-pyautogui.keyUp('alt')
+pyautogui.hotkey('alt', 'tab')
+
+
 while True:
     time.sleep(1)
     pyautogui.moveTo(['1357', '449'])
