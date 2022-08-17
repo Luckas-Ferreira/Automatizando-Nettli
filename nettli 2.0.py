@@ -43,12 +43,22 @@ pyautogui.alert('Agora o computador está sendo controlado')
 
 pyautogui.PAUSE = 0.3
 time.sleep(0.5)
+
+abrirCalculadora()
+
 pyautogui.hotkey('alt', 'tab')
 
 while True:
     img = pyautogui.locateCenterOnScreen('captura.png', confidence=0.9)
     time.sleep(0.5)
     print(img)
+
+    time.sleep(5)
+    pyautogui.moveTo(['1357', '449'])
+    pyautogui.click()
+    pyautogui.moveTo(['1196', '385'])
+    pyautogui.click()
+
     pyautogui.click(['1362', '272'])
     while img != None:
         time.sleep(1)
