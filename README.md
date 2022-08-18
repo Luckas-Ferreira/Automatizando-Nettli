@@ -24,6 +24,11 @@
 - [x] Repetir até terminar todos os anúncios
 - [ ] Parar com um clique “esc”
 
+### Compatibilidade
+- [x] Linux Ubuntu
+- [ ] Windows 7
+- [ ] Windows 10
+
 ### Demonstrações
 <h1 align="center">
   Em breve!
@@ -39,10 +44,13 @@ Por enquanto, só foi testado no Linux-Ubuntu, para usar no windows, sera necess
 -Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Python](https://www.python.org). 
 
-Será necessario ter a biblioteca Pyautogui
+Será necessario ter as seguintes bibliotecas
 ```bash
 # instalação do pyautogui
 $ pip install pyautogui
+
+# instalação da interface Tkinter
+$ sudo apt-get install python3-tk
 ```
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
