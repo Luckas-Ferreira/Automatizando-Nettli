@@ -1,9 +1,6 @@
 from email.mime import image
-import pyautogui, time
-from pynput import keyboard
+import pyautogui, time, keyboard
 
-''' if keyboard.read_key() == "esc":
-        break'''
 
 def pageDown():
     pyautogui.keyDown('win')
@@ -31,11 +28,15 @@ def abrirCalculadora():
     pyautogui.click()
     pageUp()
 
+def fechar():
+    pass
 def ctrlC():
     pyautogui.hotkey('ctrlleft', 'c')
 
 def ctrlV():
     pyautogui.hotkey('ctrlleft', 'v')
+def ctrlA():
+    pyautogui.hotkey('ctrl', 'a')
 
 
 
@@ -48,22 +49,20 @@ abrirCalculadora()
 
 pyautogui.hotkey('alt', 'tab')
 
+time.sleep(1)
+pyautogui.moveTo(['1357', '449'])
+pyautogui.click()
+pyautogui.moveTo(['1196', '385'])
+pyautogui.click()
+
 while True:
-    img = pyautogui.locateCenterOnScreen('captura.png', confidence=0.9)
+    img = pyautogui.locateCenterOnScreen('captura2.png', confidence=0.9)
     time.sleep(0.5)
     print(img)
 
-    time.sleep(5)
-    pyautogui.moveTo(['1357', '449'])
-    pyautogui.click()
-    pyautogui.moveTo(['1196', '385'])
-    pyautogui.click()
-
-    pyautogui.click(['1362', '272'])
     while img != None:
         time.sleep(1)
         pyautogui.moveTo(['907', '169'])
-        time.sleep(0.25)
         pyautogui.doubleClick()
         ctrlC()
         pageDown()
@@ -73,18 +72,17 @@ while True:
         pyautogui.click(['798', '739'])
         pageUp()
         pyautogui.moveTo(['985', '169'])
-        pyautogui.doubleClick()
-        time.sleep(0.25)
+        pyautogui.doubleClick()       
         ctrlC()
         pageDown()
         ctrlV()
         pyautogui.click(['1127', '741'])
-        pyautogui.moveTo(['19', '560'])
-        pyautogui.doubleClick()
+        ctrlA()
         ctrlC()
         pyautogui.press(['delete'])
         pageUp()
-        pyautogui.click(['1066', '169'])
+        pyautogui.doubleClick(['1066', '169'])
+        pyautogui.press(['del'])
         ctrlV()
         pyautogui.moveTo(['1184', '177'])
         pyautogui.doubleClick()
