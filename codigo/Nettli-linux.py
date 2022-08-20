@@ -56,7 +56,7 @@ pyautogui.moveTo(['1196', '385'])
 pyautogui.click()
 
 while True:
-    img = pyautogui.locateCenterOnScreen('captura2.png', confidence=0.9)
+    img = pyautogui.locateCenterOnScreen('codigo/captura2.png', confidence=0.9)
     time.sleep(0.5)
     print(img)
 
