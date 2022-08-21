@@ -1,6 +1,9 @@
 from email.mime import image
 import pyautogui, time
 
+pyautogui.alert('Agora o computador está sendo controlado')
+pyautogui.PAUSE = 0.3
+time.sleep(0.5)
 
 def pageDown():
     pyautogui.keyDown('win')
@@ -12,6 +15,15 @@ def pageUp():
     pyautogui.press(['pageup'])
     pyautogui.keyUp('win')
 
+def abrirNavegador():
+    pyautogui.press(['win'])
+    time.sleep(2)
+    pyautogui.write('chrome')
+    pyautogui.press(['enter'])
+    time.sleep(6)
+    pyautogui.write('https://www.nettli.com/user/ptc')
+    time.sleep(0.5)
+    pyautogui.press(['enter'])
 
 def abrirCalculadora():
     pageDown()
@@ -38,16 +50,8 @@ def ctrlV():
 def ctrlA():
     pyautogui.hotkey('ctrl', 'a')
 
-
-
-pyautogui.alert('Agora o computador está sendo controlado')
-
-pyautogui.PAUSE = 0.3
-time.sleep(0.5)
-
+abrirNavegador()
 abrirCalculadora()
-
-pyautogui.hotkey('alt', 'tab')
 
 time.sleep(1)
 pyautogui.moveTo(['1357', '449'])
@@ -55,11 +59,17 @@ pyautogui.click()
 pyautogui.moveTo(['1196', '385'])
 pyautogui.click()
 
+
+contador = 0
 while True:
     img = pyautogui.locateCenterOnScreen('codigo/captura2.png', confidence=0.9)
     verification = pyautogui.locateCenterOnScreen('codigo/Verificacao2.png')
     if verification == None:
         pyautogui.click(['1364', '157'])
+    print(contador)
+    if contador > 12:
+        pyautogui.hotkey(['ctrl', 'shift', 'w'])
+        abrirNavegador()
     time.sleep(0.5)
     
     while img != None:
@@ -93,4 +103,5 @@ while True:
         pyautogui.click()
         pyautogui.moveTo(['1196', '385'])
         pyautogui.click()
+        contador += 1
         break
