@@ -67,9 +67,6 @@ while True:
     if verification == None:
         pyautogui.click(['1364', '157'])
     print(contador)
-    if contador > 10:
-        pyautogui.hotkey(['ctrl', 'shift', 'w'])
-        abrirNavegador()
     time.sleep(0.5)
     
     while img != None:
