@@ -1,5 +1,5 @@
 from email.mime import image
-import pyautogui, time, keyboard
+import pyautogui, time
 
 
 def pageDown():
