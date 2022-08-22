@@ -21,6 +21,7 @@ def abrirNavegador():
     pyautogui.write('chrome')
     pyautogui.press(['enter'])
     time.sleep(6)
+    pyautogui.click(['309', '78'])
     pyautogui.write('https://www.nettli.com/user/ptc')
     time.sleep(0.5)
     pyautogui.press(['enter'])
@@ -66,9 +67,19 @@ while True:
     verification = pyautogui.locateCenterOnScreen('codigo/Verificacao2.png')
     if verification == None:
         pyautogui.click(['1364', '157'])
-    print(contador)
+        
     time.sleep(0.5)
-    
+
+    if contador > 10:
+        pyautogui.click(['1349', '45'])
+        abrirNavegador()
+        time.sleep(2)
+        pyautogui.moveTo(['1357', '449'])
+        pyautogui.click()
+        pyautogui.moveTo(['1196', '385'])
+        pyautogui.click()
+        contador = 0
+
     while img != None:
         time.sleep(1)
         pyautogui.moveTo(['907', '169'])
