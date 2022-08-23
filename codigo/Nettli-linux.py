@@ -33,6 +33,7 @@ def abrirCalculadora():
     pyautogui.write('calculadora')
     time.sleep(1.1)
     pyautogui.press(['enter'])
+
     time.sleep(1.5)
     pyautogui.keyDown('win')
     pyautogui.press(['right'])
