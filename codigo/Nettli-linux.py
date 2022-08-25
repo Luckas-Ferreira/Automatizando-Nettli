@@ -107,7 +107,7 @@ while True:
         ctrlV()
         pyautogui.moveTo(['1184', '177'])
         pyautogui.doubleClick()
-        time.sleep(7)
+        time.sleep(12)
         pyautogui.moveTo(['1357', '449'])
         pyautogui.click()
         pyautogui.moveTo(['1196', '385'])
