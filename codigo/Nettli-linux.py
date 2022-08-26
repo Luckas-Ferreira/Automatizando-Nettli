@@ -18,6 +18,7 @@ def pageUp():
 def abrirNavegador():
     pyautogui.press(['win'])
     time.sleep(2)
+    
     pyautogui.write('chrome')
     pyautogui.press(['enter'])
     time.sleep(6)
