@@ -115,3 +115,4 @@ while True:
         pyautogui.click()
         contador += 1
         break
+
