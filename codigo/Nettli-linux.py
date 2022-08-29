@@ -3,6 +3,7 @@ import pyautogui, time
 
 pyautogui.alert('Agora o computador está sendo controlado')
 pyautogui.PAUSE = 0.3
+
 time.sleep(0.5)
 
 def pageDown():
