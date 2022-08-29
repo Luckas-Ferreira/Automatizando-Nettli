@@ -64,6 +64,7 @@ pyautogui.click()
 
 
 contador = 0
+
 while True:
     img = pyautogui.locateCenterOnScreen('codigo/captura2.png', confidence=0.9)
     verification = pyautogui.locateCenterOnScreen('codigo/Verificacao2.png')
