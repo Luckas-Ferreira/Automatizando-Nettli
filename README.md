@@ -17,7 +17,7 @@
 ### Features
 
 - [x] Abrir Calculadora
-- [ ] Abrir o navegador e acessar o site Nettli.com
+- [x] Abrir o navegador e acessar o site Nettli.com
 - [ ] Fazer login
 - [x] Clicar no anúncio
 - [x] Resolver a soma e confirmar
