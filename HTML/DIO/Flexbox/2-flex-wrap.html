@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex wrap</title>
+
+    <style>
+        .flex-container{
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            border: 2px solid black;
+            max-width: 400px;
+        }
+
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            min-width: 100px;
+            line-height: 50px;
+        }
+        .nowrap{
+            flex-wrap: nowrap;
+        }
+
+        .wrap{
+            flex-wrap: wrap;
+        }
+        .blue{
+            background-color: blue;
+        }
+
+        .wrap-reverse{
+            flex-wrap: wrap-reverse;
+        }
+    </style>
+</head>
+<body>
+    <h1>no wrap</h1>
+
+    <div class="flex-container">
+        <div class="item blue">1</div>
+        <div style="background-color: green;" class="item">2</div>
+        <div style="background-color: orange;" class="item">3</div>
+        <div class="item blue">1</div>
+
+    </div>
+
+    <h1>Wrap</h1>
+
+    <div class="flex-container wrap">
+        <div class="item blue">3</div>
+        <div style="background-color: green;"" class="item">1</div>
+        <div style="background-color: orange;" class="item">2</div>
+        <div class="item blue">3</div>
+    </div>
+
+
+    <h1>Wrap-reverse</h1>
+
+    <div class="flex-container wrap-reverse">
+        <div class="item blue">3</div>
+        <div style="background-color: green;"" class="item">1</div>
+        <div style="background-color: orange;" class="item">2</div>
+        <div class="item blue">3</div>
+    </div>
+</body>
+</html>

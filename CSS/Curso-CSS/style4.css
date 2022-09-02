@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.init {
+    background-color: slategrey;
+}
+
+ul {
+    display: block;
+    background-color: black;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 15px;
+    color: white;
+}
+li:hover {
+    display: inline-block;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.login {
+    padding: 10px;
+    margin-right: 15px;
+    float: right;
+}
+.login:hover {
+    padding: 10px;
+    margin-right: 15px;
+    background-color: gray;
+    float: right;
+    color: red;
+}
+.container {
+    position: relative;
+    margin: auto;
+    max-width: 500px;
+    border: 1px solid black;
+}
+
+.img {
+    margin-right: 10px;
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.new {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 10px
+}

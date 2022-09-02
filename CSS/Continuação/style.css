@@ -1,0 +1,63 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo {
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgb(20, 1, 89);
+    padding: 5px;
+    background-color: rgb(0, 0, 151);
+}
+
+.links {
+    background-color: rgb(28, 133, 253);
+    text-align: center;
+}
+
+a.social {
+    color: white;
+    text-decoration: none;
+    margin: 25px;
+}
+
+a.social:hover {
+    color: red;
+    font-weight: 700;
+    text-transform:unset;
+}
+
+.my-photo {
+    display: flex;
+    margin: 10px auto 10px auto;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
+
+section {
+    height: 600px;
+    border-top: 1px solid black;
+    background-color: rgb(161, 230, 255);
+}
+
+.bio {
+    background-color: rgb(96, 177, 247);
+    padding: 10px;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}
+
+.bio:hover {
+    background-color: rgb(96, 177, 247);
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    margin: auto;
+    width: 200px;
+    text-align: center;
+}

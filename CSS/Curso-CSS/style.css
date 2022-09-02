@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,700&display=swap');
+
+header h1 {
+    color: white;
+    max-width: 900px;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-weight: 900;
+}
+
+.texto {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: red;
+    text-align: justify;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+}
+
+.fundo {
+    height: 50px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-image: url(image.jpg);
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+a.botao1 {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    padding: 6px 10px 6px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(114, 252, 240);
+}
+
+a.botao1:hover {
+    color: white;
+    background-color: black;
+}
+
+.bloco {
+    color: white;
+    width: 200px;
+    padding: 5px 15px 5px 15px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: purple ;
+}
+
+a.botao2 {
+    padding: 5px;
+    color: blue;
+    border: 3px double blue;
+    text-decoration: none;
+}
+a.botao2:hover {
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 3px double blue;
+    text-decoration: none;
+}
+
+a.botao3 {
+    color: blue;
+    text-decoration: none;
+}
+a.botao3:hover {
+    color: red
+}
+
+
+a.botao4 {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+a.botao4:hover {
+    font-size: 30px;
+    color: blue
+}
