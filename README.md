@@ -49,6 +49,9 @@ Será necessario ter as seguintes bibliotecas
 # instalação do pyautogui
 $ pip install pyautogui
 
+# instalação do pythonCV
+$ pip install opencv-python
+
 # instalação da interface Tkinter
 $ sudo apt-get install python3-tk
 ```
