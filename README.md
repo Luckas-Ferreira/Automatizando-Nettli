@@ -26,6 +26,7 @@
 
 ### Compatibilidade
 - [x] Linux Ubuntu
+- [x] BigLinux
 - [ ] Windows 7
 - [ ] Windows 10
 
