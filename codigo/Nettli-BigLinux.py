@@ -70,10 +70,12 @@ while True:
         ctrlC()
         pyautogui.hotkey('alt', 'tab')
         ctrlV()
+
         pyautogui.click(['813', '693'])
         pyautogui.hotkey('alt', 'tab')
         pyautogui.moveTo(['982', '142'])
-        pyautogui.doubleClick()       
+        pyautogui.doubleClick()
+
         ctrlC()
         pyautogui.hotkey('alt', 'tab')
         ctrlV()
@@ -81,10 +83,12 @@ while True:
         pyautogui.doubleClick(['383', '423'])
         ctrlA()
         ctrlC()
+
         pyautogui.press(['delete'])
         pyautogui.hotkey('alt', 'tab')
         pyautogui.doubleClick(['1060', '144'])
         pyautogui.press(['del'])
+        
         ctrlV()
         pyautogui.moveTo(['1163', '143'])
         pyautogui.doubleClick()
