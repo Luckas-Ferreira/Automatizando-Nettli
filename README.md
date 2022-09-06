@@ -71,7 +71,7 @@ $ cd Automatizando-Nettli/cmd
 $ code .
 
 # Execulte o arquivo
-$ Nettli-linux.py
+$ Nettli-Ubuntu.py ou $ Netlli-BigLinux.py
 ```
 #
 
