@@ -4,7 +4,7 @@ from email.mime import image
 import pyautogui, time
 
 pyautogui.alert('Agora o computador está sendo controlado')
-pyautogui.PAUSE = 0.3
+pyautogui.PAUSE = 0.7
 
 time.sleep(0.5)
 
@@ -21,6 +21,7 @@ def pageUp():
 def abrirNavegador():
     pyautogui.click(['411', '744'])
     time.sleep(6)
+    pyautogui.click(['267', '13'])
     pyautogui.write('https://www.nettli.com/user/ptc')
     time.sleep(0.5)
     pyautogui.press(['enter'])
@@ -65,6 +66,7 @@ while True:
 
     while img != None:
         time.sleep(1)
+        pyautogui.click(['230', '14'])
         pyautogui.moveTo(['904', '143'])
         pyautogui.doubleClick()
         ctrlC()
