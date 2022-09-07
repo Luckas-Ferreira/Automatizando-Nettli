@@ -2,57 +2,16 @@
 
 from email.mime import image
 import pyautogui, time
+from Main import *
+BigLinux = Nettli()
 
 pyautogui.alert('Agora o computador está sendo controlado')
 pyautogui.PAUSE = 0.5
 
-time.sleep(0.5)
-
-def TelaInicial():
-    while True: 
-        verificacaoInicial = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao1.png')
-        print(verificacaoInicial)
-        while verificacaoInicial != None:
-            pyautogui.moveTo(['1357', '449'])
-            pyautogui.click()
-            pyautogui.moveTo(['1195', '439'])
-            pyautogui.click()
-            break
-
-def EncontrarCalculadora():
-    while True:
-        calculadora = pyautogui.locateCenterOnScreen('codigo/imagens/Calculadora.png', confidence=0.7)
-        if calculadora == None:
-            pyautogui.keyDown('alt')
-            pyautogui.press('tab')              
-            time.sleep(0.2)
-        else:
-            pyautogui.keyUp('alt')
-            break
-
-def EncontrarNavegador():
-    while True:
-        calculadora = pyautogui.locateCenterOnScreen('codigo/imagens/Navegador.png', confidence=0.7)
-        if calculadora == None:
-            pyautogui.keyDown('alt')
-            pyautogui.press('tab')              
-            time.sleep(0.2)
-        else:
-            pyautogui.keyUp('alt')
-            break
-
-def ctrlC():
-    pyautogui.hotkey('ctrlleft', 'c')
-def ctrlV():
-    pyautogui.hotkey('ctrlleft', 'v')
-def ctrlA():
-    pyautogui.hotkey('ctrl', 'a')
-
+pyautogui.hotkey('alt', 'tab')
 time.sleep(1)
 
-pyautogui.hold('alt', 'tab')
-EncontrarNavegador()
-
+BigLinux.EncontrarNavegador()
 pyautogui.moveTo(['1357', '449'])
 pyautogui.click()
 pyautogui.moveTo(['1195', '439'])
@@ -66,38 +25,39 @@ while True:
         pyautogui.click(['1364', '157'])
         
     time.sleep(0.5)
-
+    print(img)
     while img != None:
         time.sleep(1)
         pyautogui.click(['231', '45'])
         pyautogui.moveTo(['904', '173'])
         pyautogui.doubleClick()
-        ctrlC()
-        EncontrarCalculadora()
-        ctrlV()
+        BigLinux.ctrlC()
+        BigLinux.EncontrarCalculadora()
+        BigLinux.ctrlV()
 
         pyautogui.click(['813', '733'])
-        EncontrarNavegador()
+        BigLinux.EncontrarNavegador()
         pyautogui.moveTo(['982', '173'])
         pyautogui.doubleClick()
-        ctrlC()
+        BigLinux.ctrlC()
 
-        EncontrarCalculadora()
-        ctrlV()
+        BigLinux.EncontrarCalculadora()
+        BigLinux.ctrlV()
         pyautogui.press('enter')
         pyautogui.doubleClick(['381', '464'])
 
-        ctrlA()
-        ctrlC()
+        BigLinux.ctrlA()
+        BigLinux.ctrlC()
         pyautogui.press(['delete'])
 
-        EncontrarNavegador()
+        BigLinux.EncontrarNavegador()
         pyautogui.doubleClick(['1060', '173'])
         pyautogui.press(['del'])
         
-        ctrlV()
+        BigLinux.ctrlV()
         pyautogui.moveTo(['1163', '173'])
         pyautogui.doubleClick()
-        TelaInicial()
+        BigLinux.TelaInicial()
+        break
 
 #Fim!
