@@ -8,35 +8,16 @@ pyautogui.PAUSE = 0.7
 
 time.sleep(0.5)
 
-def pageDown():
-    pyautogui.keyDown('win')
-    pyautogui.press(['pagedown'])
-    pyautogui.keyUp('win')
-
-def pageUp():
-    pyautogui.keyDown('win')
-    pyautogui.press(['pageup'])
-    pyautogui.keyUp('win')
-
-def abrirNavegador():
-    pyautogui.click(['411', '744'])
-    time.sleep(6)
-    pyautogui.click(['267', '13'])
-    pyautogui.write('https://www.nettli.com/user/ptc')
-    time.sleep(0.5)
-    pyautogui.press(['enter'])
-    time.sleep(0.5)
-    pyautogui.hotkey('alt', 'tab')
-    pyautogui.hotkey('alt', 'tab')
-    
-
-def abrirCalculadora():
-    pyautogui.click(['553', '750'])
-    time.sleep(2)
-    pyautogui.hotkey('win', 'right')
-    pyautogui.moveTo(['1301', '26'])
-    pyautogui.click()
-    pyautogui.hotkey('alt', 'tab')
+def EncontrarCalculadora():
+    calculadora = pyautogui.locateCenterOnScreen('codigo/imagens/Calculadora.png')
+    while True: 
+        if calculadora == None:
+            pyautogui.keyDown('alt')
+            pyautogui.click('tab')
+            time.sleep(0.5)
+        else:
+            pyautogui.keyUp('alt')
+            break
 
 def ctrlC():
     pyautogui.hotkey('ctrlleft', 'c')
@@ -45,11 +26,10 @@ def ctrlV():
 def ctrlA():
     pyautogui.hotkey('ctrl', 'a')
 
-
-abrirNavegador()
-abrirCalculadora()
-
 time.sleep(1)
+pyautogui.hotkey('alt', 'tab')
+6
+
 pyautogui.moveTo(['1357', '449'])
 pyautogui.click()
 pyautogui.moveTo(['1195', '439'])
@@ -57,8 +37,8 @@ pyautogui.click()
 
 
 while True:
-    img = pyautogui.locateCenterOnScreen('codigo/Captura1.png', confidence=0.9)
-    verification = pyautogui.locateCenterOnScreen('codigo/Verificacao2.png')
+    img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
+    verification = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao2.png')
     if verification == None:
         pyautogui.click(['1364', '157'])
         
@@ -66,20 +46,20 @@ while True:
 
     while img != None:
         time.sleep(1)
-        pyautogui.click(['230', '14'])
-        pyautogui.moveTo(['904', '143'])
+        pyautogui.click(['231', '45'])
+        pyautogui.moveTo(['904', '173'])
         pyautogui.doubleClick()
         ctrlC()
-        pyautogui.hotkey('alt', 'tab')
+        EncontrarCalculadora()
         ctrlV()
 
         pyautogui.click(['813', '693'])
         pyautogui.hotkey('alt', 'tab')
-        pyautogui.moveTo(['982', '142'])
+        pyautogui.moveTo(['982', '173'])
         pyautogui.doubleClick()
-
         ctrlC()
-        pyautogui.hotkey('alt', 'tab')
+
+        EncontrarCalculadora()
         ctrlV()
         pyautogui.press('enter')
         pyautogui.doubleClick(['383', '423'])
@@ -88,7 +68,7 @@ while True:
 
         pyautogui.press(['delete'])
         pyautogui.hotkey('alt', 'tab')
-        pyautogui.doubleClick(['1060', '144'])
+        pyautogui.doubleClick(['1060', '173'])
         pyautogui.press(['del'])
         
         ctrlV()
