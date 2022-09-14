@@ -34,6 +34,7 @@ class Nettli:
                 break
     
     def TelaInicial(self):
+        pyautogui.PAUSE=0.4
         while True: 
             verificacaoInicial = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao1.png')
             print(verificacaoInicial)
