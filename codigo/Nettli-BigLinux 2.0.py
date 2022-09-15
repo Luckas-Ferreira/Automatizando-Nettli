@@ -28,6 +28,7 @@ while True:
     print(img)
     pyautogui.PAUSE = 0.2
     while img != None:
+        pyautogui.click(['231', '45'])
         while True:
             confirmar = pyautogui.locateCenterOnScreen('codigo/imagens/Confirmar.jpeg', confidence=0.9)
             if confirmar == None:
