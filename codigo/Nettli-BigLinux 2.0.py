@@ -29,13 +29,11 @@ while True:
     pyautogui.PAUSE = 0.2
     while img != None:
         pyautogui.click(['231', '45'])
+        pyautogui.click(['1105', '178'])
+        pyautogui.click(['1106 ','166'])
         while True:
             confirmar = pyautogui.locateCenterOnScreen('codigo/imagens/Confirmar.jpeg', confidence=0.9)
-            if confirmar == None:
-                pyautogui.click(['1105', '178'])
-                pyautogui.click(['1105', '178'])
-                pyautogui.click(['1106 ','166'])
-                pyautogui.click(['1106', '166'])  
+            if confirmar == None: 
                 pyautogui.click(['1106', '166'])   
                 
             else:
