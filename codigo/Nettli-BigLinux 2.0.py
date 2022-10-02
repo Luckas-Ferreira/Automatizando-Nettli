@@ -17,6 +17,7 @@ pyautogui.click()
 pyautogui.moveTo(['1195', '439'])
 pyautogui.click()
  
+ 
 while True:
     img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
     verification = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao2.png')
