@@ -1,5 +1,4 @@
 #Inicio
-
 from email.mime import image
 import pyautogui, time
 from Main import *
