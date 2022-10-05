@@ -3,7 +3,6 @@
 from email.mime import image
 import pyautogui, time
 
-
 pyautogui.alert('Agora o computador está sendo controlado')
 pyautogui.PAUSE = 0.3
 
