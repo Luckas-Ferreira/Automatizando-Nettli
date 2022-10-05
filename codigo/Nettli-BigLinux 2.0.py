@@ -32,7 +32,7 @@ while True:
         while True:
             confirmar = pyautogui.locateCenterOnScreen('codigo/imagens/Confirmar.jpeg', confidence=0.9)
             if confirmar == None: 
-                pyautogui.click(['1106', '166'])   
+                pyautogui.click(['1106', '166'])    
                 
             else:
                 pyautogui.moveTo(['1163', '173'])
