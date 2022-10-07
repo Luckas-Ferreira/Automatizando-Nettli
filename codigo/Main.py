@@ -13,7 +13,7 @@ class Nettli:
     
     def EncontrarNavegador(self):
         while True:
-            navegador1 = pyautogui.locateCenterOnScreen('codigo/imagens/Navegador2.png', confidence=0.7)
+            navegador1 = pyautogui.locateCenterOnScreen('codigo/imagens/Navegador3.png', confidence=0.7)
             if navegador1 == None:
                 pyautogui.keyDown('alt')
                 pyautogui.press('tab')              
