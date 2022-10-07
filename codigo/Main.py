@@ -13,7 +13,7 @@ class Nettli:
     
     def EncontrarNavegador(self):
         while True:
-            navegador1 = pyautogui.locateCenterOnScreen('codigo/imagens/Navegador3.png', confidence=0.7)
+            navegador1 = pyautogui.locateCenterOnScreen('imagens/Navegador3.png', confidence=0.7)
             if navegador1 == None:
                 pyautogui.keyDown('alt')
                 pyautogui.press('tab')              
@@ -24,7 +24,7 @@ class Nettli:
     
     def EncontrarCalculadora(self):
         while True:
-            calculadora = pyautogui.locateCenterOnScreen('codigo/imagens/Calculadora.png', confidence=0.7)
+            calculadora = pyautogui.locateCenterOnScreen('imagens/Calculadora.png', confidence=0.7)
             if calculadora == None:
                 pyautogui.keyDown('alt')
                 pyautogui.press('tab')              
@@ -36,7 +36,7 @@ class Nettli:
     def TelaInicial(self):
         pyautogui.PAUSE=0.4
         while True: 
-            verificacaoInicial = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao1.png')
+            verificacaoInicial = pyautogui.locateCenterOnScreen('imagens/Verificacao1.png')
             print(verificacaoInicial)
             while verificacaoInicial != None:
                 pyautogui.moveTo(['1357', '449'])
