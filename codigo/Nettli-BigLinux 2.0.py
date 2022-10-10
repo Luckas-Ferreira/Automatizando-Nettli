@@ -18,8 +18,8 @@ pyautogui.moveTo(['1195', '439'])
 pyautogui.click()
 
 while True:
-    img = pyautogui.locateCenterOnScreen('imagens/Captura1.png', confidence=0.9)
-    verification = pyautogui.locateCenterOnScreen('imagens/Verificacao2.png')
+    img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
+    verification = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao2.png')
     if verification == None:
         pyautogui.click(['1364', '157'])
         
@@ -31,7 +31,7 @@ while True:
         pyautogui.click(['1105', '178'])
         pyautogui.click(['1106 ','166'])
         while True:
-            confirmar = pyautogui.locateCenterOnScreen('imagens/Confirmar.jpeg', confidence=0.9)
+            confirmar = pyautogui.locateCenterOnScreen('codigo/imagens/Confirmar.jpeg', confidence=0.9)
             if confirmar == None: 
                 pyautogui.click(['1106', '166'])    
                 
