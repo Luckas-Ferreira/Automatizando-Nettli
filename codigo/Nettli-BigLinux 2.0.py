@@ -21,7 +21,7 @@ while True:
     img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
     verification = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao2.png')
     if verification == None:
-        pyautogui.click(['1364', '157'])
+        pyautogui.click(['1358', '157'])
         
     time.sleep(0.5)
     print(img)
