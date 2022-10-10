@@ -12,9 +12,9 @@ pyautogui.hotkey('alt', 'tab')
 time.sleep(1)
 
 BigLinux.EncontrarNavegador()
-pyautogui.moveTo(['1357', '449'])
+pyautogui.moveTo(['1356', '380'])
 pyautogui.click()
-pyautogui.moveTo(['1195', '439'])
+pyautogui.moveTo(['1195', '394'])
 pyautogui.click()
 
 while True:
