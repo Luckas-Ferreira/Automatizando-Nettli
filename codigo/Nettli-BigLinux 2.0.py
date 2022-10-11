@@ -12,10 +12,8 @@ pyautogui.hotkey('alt', 'tab')
 time.sleep(1)
 
 BigLinux.EncontrarNavegador()
-pyautogui.moveTo(['1356', '380'])
-pyautogui.click()
-pyautogui.moveTo(['1195', '394'])
-pyautogui.click()
+pyautogui.doubleClick(['1356', '380'])
+pyautogui.click(['1195', '394'])
 
 while True:
     img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
@@ -27,17 +25,22 @@ while True:
     print(img)
     pyautogui.PAUSE = 0.2
     while img != None:
+        #Procura o valor exato em forma crescente.
         pyautogui.click(['231', '45'])
         pyautogui.click(['1105', '178'])
         pyautogui.click(['1106 ','166'])
         while True:
+            #Verifica se o botão "Confirmar" está verde.
             confirmar = pyautogui.locateCenterOnScreen('codigo/imagens/Confirmar.jpeg', confidence=0.9)
-            if confirmar == None: 
+            if confirmar == None:
                 pyautogui.click(['1106', '166'])    
                 
             else:
+                #Quando encontra o botão verde, confirma
                 pyautogui.moveTo(['1163', '173'])
                 pyautogui.doubleClick()
+                
+                #Volta para a tela inicial
                 BigLinux.TelaInicial()
                 break
         break   

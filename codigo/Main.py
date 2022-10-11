@@ -39,8 +39,6 @@ class Nettli:
             verificacaoInicial = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao1.png')
             print(verificacaoInicial)
             while verificacaoInicial != None:
-                pyautogui.moveTo(['1357', '449'])
-                pyautogui.click()
-                pyautogui.moveTo(['1195', '439'])
-                pyautogui.click()
+                pyautogui.doubleClick(['1356', '380'])
+                pyautogui.click(['1195', '394'])
                 return False
