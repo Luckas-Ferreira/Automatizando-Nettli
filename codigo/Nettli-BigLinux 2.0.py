@@ -4,7 +4,6 @@ import pyautogui, time
 from Main import *
 BigLinux = Nettli()
 
-
 pyautogui.alert('Agora o computador está sendo controlado')
 pyautogui.PAUSE = 0.5
 
