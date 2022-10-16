@@ -1,5 +1,6 @@
 import pyautogui, time
 
+
 class Nettli:
 
     def ctrlC(self):
