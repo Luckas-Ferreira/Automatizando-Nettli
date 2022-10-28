@@ -7,7 +7,6 @@ BigLinux = Nettli()
 pyautogui.alert('Agora o computador está sendo controlado')
 pyautogui.PAUSE = 0.5
 
-
 pyautogui.hotkey('alt', 'tab')
 time.sleep(1)
 
