@@ -14,7 +14,6 @@ BigLinux.EncontrarNavegador()
 pyautogui.doubleClick(['1356', '380'])
 pyautogui.click(['1195', '394'])
 
-
 while True:
     img = pyautogui.locateCenterOnScreen('codigo/imagens/Captura1.png', confidence=0.9)
     verification = pyautogui.locateCenterOnScreen('codigo/imagens/Verificacao2.png')
