@@ -24,7 +24,7 @@ while True:
     print(img)
     pyautogui.PAUSE = 0.2
     while img != None:
-        #Procura o valor exato em forma crescente.
+        #Procura o valor exato em forma crescente. 
         pyautogui.click(['231', '45'])
         pyautogui.click(['1105', '178'])
         pyautogui.click(['1106 ','166'])
