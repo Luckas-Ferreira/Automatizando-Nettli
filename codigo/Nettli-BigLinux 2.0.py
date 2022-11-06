@@ -20,7 +20,6 @@ while True:
     if verification == None:
         pyautogui.click(['1358', '157'])
         
-        
     time.sleep(0.5)
     print(img)
     pyautogui.PAUSE = 0.2
