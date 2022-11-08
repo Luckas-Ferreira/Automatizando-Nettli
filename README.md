@@ -1,5 +1,6 @@
 <h1 align="center"> Automação para ver anuncios em Nettli.com </h1>
 
+
 <p align="center">O objetivo principal é torna o seu tempo mais precioso, deixando o computador realizar essa tarefa repetitiva de ver anúncios de forma automática.</p>
 
 <p align="center"> 
